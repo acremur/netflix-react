@@ -1,0 +1,136 @@
+.profile {
+    height: 80vh;
+    width: 100vw;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__body {
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    max-width: 700px;
+}
+
+.profile__body > h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 3rem;
+    border-bottom: 1px solid #282c2d;
+}
+
+.profile__info {
+    display: flex;
+}
+
+.profile__infoLeft {
+    flex: 1;
+    margin-right: 1.5em;
+}
+
+.profile__infoLeft > img {
+    width: 6rem;
+    height: 6.6rem;
+}
+
+.profile__infoRight {
+    flex: 6;   
+}
+
+.profile__details > h2 {
+    height: 50%;
+    padding: 1rem;
+    background-color: gray;
+    font-size: 1rem;
+}
+
+.profile__details > h3 {
+    height: 50%;
+    padding: 1rem 0;
+    border-bottom: 1px solid #282c2d;
+}
+
+.profile__button {
+    padding: 1rem;
+    margin-top: 2rem;
+    width: calc(100% - 7.5rem);
+    margin-left: 7.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.profile__button:hover {
+    background-color: #fa1924;
+}
+
+.profile__planWrapper {
+    display: flex;
+    flex-direction: column;
+    color: lightgray;
+    margin-top: 1rem;
+}
+
+.profile__planWrapper > h3 {
+    font-size: 1rem;
+}
+
+.profile__plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.profile__plan:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.profile__planInfo > * {
+    width: fit-content;
+    font-size: 0.7rem;
+}
+
+.profile__subscribed,
+.profile__unsubscribed {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.profile__subscribed {
+    background-color: #e50914;
+}
+
+.profile__unsubscribed {
+    background-color: gray;
+}
+
+.profile__unsubscribed:hover {
+    background-color: rgb(148, 147, 147);
+}
+
+.profile__subscribed:hover {
+    background-color: #fa1924;
+}
+
+@media (max-width: 480px) {
+    .profile__body > h1 {
+        font-size: 2rem;
+    }
+    .profile__infoLeft {
+        display: none;
+    }
+
+    .profile__button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
